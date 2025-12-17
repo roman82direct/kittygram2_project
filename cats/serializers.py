@@ -22,7 +22,7 @@ class AchievementSerializer(serializers.ModelSerializer):
         model = Achievement
         fields = ('id', 'achievement_name')
 
-
+# test
 class CatSerializer(serializers.ModelSerializer):
     achievements = AchievementSerializer(many=True, required=False)
     color = serializers.ChoiceField(choices=CHOICES)
